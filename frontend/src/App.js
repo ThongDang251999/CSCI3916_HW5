@@ -4,6 +4,7 @@ import MovieList from './components/movielist';
 import Movie from './components/movie';
 import Authentication from './components/authentication';
 import SearchMovies from './components/search';
+import AddMovie from './components/AddMovie';
 import {HashRouter, Routes,  Route} from 'react-router-dom';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/movie/:movieId" element={<Movie />}/>
           <Route path="/signin" element={<Authentication />}/>
           <Route path="/search" element={<SearchMovies />}/>
+          <Route path="/add-movie" element={<AddMovie />}/>
           {/*... other routes */}
         </Routes>
       </HashRouter>
